@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glassmorphism Button Animation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img class="card__img" src="images/product.png" alt="">
+      <div class="card__data">
+        <h1 class="card__title">
+          Nike Air Jordan
+        </h1>
+        <span class="card__price">$99</span>
+        <p class="card__txt">
+          Nike Air Jordan Footwear basketball sneakers
+        </p>
+        <button id="btn">
+          <p id="btnText">Proceed to Buy</p>
+          <div class="check-box">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+              <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var btn = document.getElementById("btn");
+    var btnText = document.getElementById("btnText");
+
+    btn.onclick = function() {
+      btnText.innerHTML = "Booked";
+      btn.classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
